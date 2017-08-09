@@ -10,7 +10,9 @@
 .DS_Store
 .idea/
 .idea_modules/
+target/
 target/num/bench-report.dat
+num/
 num/KMeans_run_2017-02-07-09:20:25.dat
 num/KMeans_run_2017-02-07-09:23:50.dat
 num/KMeans_run_2017-02-07-09:57:58.dat
@@ -33,6 +35,7 @@ num/Terasort_run_2017-02-06-16:16:54.dat
 num/Terasort_run_2017-02-06-16:20:07.dat
 num/Terasort_run_2017-02-06-16:25:55.dat
 num/Terasort_run_2017-02-06-16:26:43.dat
+common/target
 common/target/classes
 common/target/classes.-343054234.timestamp
 common/target/classes.timestamp
