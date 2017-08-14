@@ -4,8 +4,8 @@ import matplotlib.pyplot as pl
 
 class LossData:
 
-	# entry of GetContainerHost is Lasso.scala
-	containerhostpath = "/home/hadoop0master/workspace/Git/Benchmark/ForkedSparkBench/spark-bench/Lasso/LogAnalysis/LassoCH"
+	# entry of GetContainerHost is RidgeRegression.scala
+	containerhostpath = "/home/hadoop0master/workspace/Git/Benchmark/ForkedSparkBench/spark-bench/RidgeRegression/LogAnalysis/RidgeRegressionCH"
 	containerId = ""
 	hostname = ""
 	

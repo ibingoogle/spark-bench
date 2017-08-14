@@ -1,9 +1,9 @@
 #!/bin/bash
-#==Lasso== 
+#==RidgeRegression== 
 bin=`dirname "$0"`
 bin=`cd "$bin"; pwd`
 
-echo "========== running Lasso benchmark on YARN =========="
+echo "========== running RidgeRegression benchmark on YARN =========="
 # configure
 DIR=`cd $bin/../; pwd`
 . "${DIR}/../bin/config.sh"
@@ -15,11 +15,11 @@ DIR=`cd $bin/../; pwd`
 
 DU ${INPUT_HDFS} SIZE 
 
-#JAR="${DIR}/target/scala-2.10/Lasso-app_2.10-1.0.jar"
-CLASS="Lasso.src.main.java.LassoApp"
+#JAR="${DIR}/target/scala-2.10/RidgeRegression-app_2.10-1.0.jar"
+CLASS="RidgeRegression.src.main.java.RidgeRegressionApp"
 OPTION=" ${INPUT_HDFS} ${OUTPUT_HDFS} ${MAX_ITERATION} "
 
-JAR="${DIR}/target/Lasso-project-1.0.jar"
+JAR="${DIR}/target/RidgeRegression-project-1.0.jar"
 
 nexe=3
 dmem=4g
@@ -34,7 +34,7 @@ for((i=0;i<${NUM_TRIALS};i++)); do
 	purge_data "${MC_LIST}"	
 START_TS=`get_start_ts`;
 	START_TIME=`timestamp`
-	echo_and_run sh -c " ${SPARK_HOME}/bin/spark-submit --class $CLASS --master yarn-cluster ${YARN_OPT} --conf spark.storage.memoryFraction=${memoryFraction} $JAR ${OPTION} 2>&1|tee ${BENCH_NUM}/Lasso_run_${START_TS}.dat"
+	echo_and_run sh -c " ${SPARK_HOME}/bin/spark-submit --class $CLASS --master yarn-cluster ${YARN_OPT} --conf spark.storage.memoryFraction=${memoryFraction} $JAR ${OPTION} 2>&1|tee ${BENCH_NUM}/RidgeRegression_run_${START_TS}.dat"
 res=$?;
 	END_TIME=`timestamp`
 get_config_fields >> ${BENCH_REPORT}
