@@ -4,8 +4,8 @@ import matplotlib.pyplot as pl
 
 class LossData:
 
-	# entry of GetContainerHost is LinearRegression.scala
-	containerhostpath = "/home/hadoop0master/workspace/Git/Benchmark/ForkedSparkBench/spark-bench/LinearRegression/LogAnalysis/LinearRegressionCH"
+	# entry of GetContainerHost is SVM.scala
+	containerhostpath = "/home/hadoop0master/workspace/Git/Benchmark/ForkedSparkBench/spark-bench/SVM/LogAnalysis/SVMCH"
 	containerId = ""
 	hostname = ""
 	
