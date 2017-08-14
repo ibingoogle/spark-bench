@@ -137,7 +137,9 @@
 
     </modules-->
 
-    <modules>   
+    <modules>
+        <module>RidgeRegression</module>
+        <module>Lasso</module>   
         <module>common</module>
         <module>Terasort</module>
         <module>PCA</module>

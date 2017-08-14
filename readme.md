@@ -58,7 +58,7 @@ Usecase 4. It allows in-depth study of performance implication of Apache Spark s
 
 **Other Workloads:**
 
-- KMeans, LinearRegression, DecisionTree, ShortestPaths, LabelPropagation, ConnectedComponent, StronglyConnectedComponent, PregelOperation
+- KMeans, RidgeRegression, Lasso, LinearRegression, DecisionTree, ShortestPaths, LabelPropagation, ConnectedComponent, StronglyConnectedComponent, PregelOperation
 
 **Supported Apache Spark releases:**
  
